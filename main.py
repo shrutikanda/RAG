@@ -1,9 +1,9 @@
-from rag_pipeline import build_query_engine
+from ingestion_pipeline import build_query_engine
 
 def main():
     engine = build_query_engine()
 
-    query = "What is fat-tailedness?"
+    query = "List top rated movies."
     response = engine.query(query)
 
     print(response)
